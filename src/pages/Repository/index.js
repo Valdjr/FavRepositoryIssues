@@ -62,8 +62,12 @@ export default class Repository extends Component {
         this.componentDidMount();
     };
 
-    handlePageChange = async e => {
-        await this.setState({ page: e.target.value });
+    handlePage = async action => {
+        const { page } = this.state;
+        await this.setState({
+            // eslint-disable-next-line no-nested-ternary
+            page: action === 'back' ? (page > 0 ? page - 1 : 1) : page + 1,
+        });
         this.componentDidMount();
     };
 
@@ -138,15 +142,15 @@ export default class Repository extends Component {
                 <Pagination>
                     <button
                         type="button"
-                        value={page > 1 ? page - 1 : 1}
-                        onClick={this.handlePageChange}
+                        value={page > 1 ? parseInt(page, 0) - 1 : 1}
+                        onClick={() => this.handlePage('back')}
                     >
                         <FaChevronLeft />
                     </button>
                     <button
                         type="button"
-                        value={page + 1}
-                        onClick={this.handlePageChange}
+                        value={parseInt(page, 0) + 1}
+                        onClick={() => this.handlePage('next')}
                     >
                         <FaChevronRight />
                     </button>
