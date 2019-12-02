@@ -1,6 +1,6 @@
 ![](demo.gif)
 
-#install
+###install
 
 `npm i` or `yarn`
 `npm star` or `yarn start`
