@@ -4,7 +4,6 @@
   Install and run
 </h3>
 
-<ul>
-    <li>`npm i` or `yarn`</li>
-    <li>`npm star` or `yarn start`</li>
-</ul>
+`npm i` or `yarn`
+
+`npm start` or `yarn start`
