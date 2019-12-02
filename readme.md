@@ -1,8 +1,10 @@
 ![](demo.gif)
 
 <h3 align="center">
-  Install
+  Install and run
 </h3>
 
-```npm i``` or ```yarn```
-```npm star``` or ```yarn start```
+<ul>
+    <li>```npm i``` or ```yarn```</li>
+    <li>```npm star``` or ```yarn start```</li>
+</ul>
