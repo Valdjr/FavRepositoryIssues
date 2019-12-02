@@ -5,6 +5,6 @@
 </h3>
 
 <ul>
-    <li>```npm i``` or ```yarn```</li>
-    <li>```npm star``` or ```yarn start```</li>
+    <li>`npm i` or `yarn`</li>
+    <li>`npm star` or `yarn start`</li>
 </ul>
